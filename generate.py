@@ -168,6 +168,9 @@ DESKTOP = {
         ("🛟", "A mistake can be undone", "By default, every deleted photo is kept for 30 days in a folder on your computer, so you can import it back."),
         ("🔒", "Nothing leaves your computer", "No photo and no GPS location is sent anywhere. No account, no cloud."),
         ("⚡", "Built for speed", "Tick, drag, Ctrl/⌘-click: select hundreds of photos in a few gestures."),
+        ("✅", "Already saved? You will see it", "Add your backup folders: photos that already have an identical copy on your computer get a green frame, so you know what can safely go."),
+        ("🔎", "Search by place or date", "“Milan”, “August 2026”, “11.02.2025”: type it and find the photos, offline, from their GPS. A calendar button filters by period."),
+        ("📅", "Day by day", "The grid shows a line and a date for each day, or goes dense with the date on hover and along the scroll bar."),
     ],
     strip_h2="Delete from your computer",
     strip_items=[
@@ -199,6 +202,9 @@ DESKTOP = {
         ("🛟", "Une erreur se rattrape", "Par défaut, chaque photo supprimée est gardée 30 jours dans un dossier de votre ordinateur : vous pouvez la réimporter."),
         ("🔒", "Rien ne quitte votre ordinateur", "Aucune photo ni position GPS n'est envoyée où que ce soit. Pas de compte, pas de cloud."),
         ("⚡", "Pensé pour aller vite", "Cochez, glissez, Ctrl/⌘+clic : sélectionnez des centaines de photos en quelques gestes."),
+        ("✅", "Déjà sauvegardée ? Vous le voyez", "Ajoutez vos dossiers de sauvegarde : les photos qui ont déjà une copie identique sur votre ordinateur sont encadrées de vert, vous savez ce qui peut partir sans risque."),
+        ("🔎", "Cherchez par lieu ou par date", "« Milan », « août 2026 », « 11.02.2025 » : tapez-le et retrouvez les photos, hors ligne, grâce à leur GPS. Un bouton calendrier filtre par période."),
+        ("📅", "Jour par jour", "La grille montre un trait et une date pour chaque jour, ou reste dense avec la date au survol et le long de la barre de défilement."),
     ],
     strip_h2="Supprimez depuis votre ordinateur",
     strip_items=[
@@ -230,6 +236,9 @@ DESKTOP = {
         ("🛟", "Un errore si rimedia", "Per impostazione predefinita, ogni foto eliminata resta 30 giorni in una cartella del tuo computer: puoi reimportarla."),
         ("🔒", "Niente lascia il tuo computer", "Nessuna foto né posizione GPS viene inviata altrove. Nessun account, nessun cloud."),
         ("⚡", "Pensato per la velocità", "Spunta, trascina, Ctrl/⌘+clic: seleziona centinaia di foto con pochi gesti."),
+        ("✅", "Già salvata? Lo vedi subito", "Aggiungi le tue cartelle di backup: le foto che hanno già una copia identica sul computer hanno una cornice verde, così sai cosa si può eliminare senza rischi."),
+        ("🔎", "Cerca per luogo o per data", "«Milano», «agosto 2026», «11.02.2025»: scrivilo e ritrovi le foto, offline, grazie al GPS. Un pulsante calendario filtra per periodo."),
+        ("📅", "Giorno per giorno", "La griglia mostra una linea e una data per ogni giorno, oppure resta compatta con la data al passaggio del mouse e lungo la barra di scorrimento."),
     ],
     strip_h2="Elimina dal computer",
     strip_items=[
@@ -261,6 +270,9 @@ DESKTOP = {
         ("🛟", "Ein Fehler lässt sich rückgängig machen", "Standardmäßig bleibt jedes gelöschte Foto 30 Tage in einem Ordner auf deinem Computer, du kannst es wieder importieren."),
         ("🔒", "Nichts verlässt deinen Computer", "Kein Foto und kein GPS-Standort wird irgendwohin gesendet. Kein Konto, keine Cloud."),
         ("⚡", "Auf Tempo ausgelegt", "Anhaken, ziehen, Strg/⌘-Klick: Hunderte Fotos mit wenigen Handgriffen auswählen."),
+        ("✅", "Schon gesichert? Sie sehen es", "Fügen Sie Ihre Sicherungsordner hinzu: Fotos, die auf Ihrem Computer schon eine identische Kopie haben, bekommen einen grünen Rahmen. So wissen Sie, was ohne Risiko weg kann."),
+        ("🔎", "Suche nach Ort oder Datum", "„Mailand“, „August 2026“, „11.02.2025“: eintippen und die Fotos offline über ihr GPS finden. Ein Kalender-Button filtert nach Zeitraum."),
+        ("📅", "Tag für Tag", "Das Raster zeigt eine Linie und ein Datum für jeden Tag oder bleibt dicht, mit dem Datum beim Darüberfahren und an der Bildlaufleiste."),
     ],
     strip_h2="Vom Computer aus löschen",
     strip_items=[
@@ -292,6 +304,9 @@ DESKTOP = {
         ("🛟", "Un error se puede deshacer", "Por defecto, cada foto borrada se guarda 30 días en una carpeta de tu ordenador y puedes importarla de nuevo."),
         ("🔒", "Nada sale de tu ordenador", "Ninguna foto ni ubicación GPS se envía a ningún sitio. Sin cuenta, sin nube."),
         ("⚡", "Pensado para ir rápido", "Marca, arrastra, Ctrl/⌘+clic: selecciona cientos de fotos con unos pocos gestos."),
+        ("✅", "¿Ya guardada? Lo ves", "Añade tus carpetas de copia: las fotos que ya tienen una copia idéntica en tu ordenador se enmarcan en verde, así sabes lo que se puede borrar sin riesgo."),
+        ("🔎", "Busca por lugar o por fecha", "«Milán», «agosto 2026», «11.02.2025»: escríbelo y encuentra las fotos, sin conexión, gracias a su GPS. Un botón de calendario filtra por periodo."),
+        ("📅", "Día a día", "La cuadrícula muestra una línea y una fecha por cada día, o se queda densa con la fecha al pasar el ratón y junto a la barra de desplazamiento."),
     ],
     strip_h2="Borra desde el ordenador",
     strip_items=[
@@ -624,12 +639,14 @@ def render_pricing(lang):
 
 
 # Real screenshots of the PixCuller window (light and dark theme, sample photos), one set per language:
-# assets/screenshots/pixculler-{iphone,review,compare,android}-{lang}-{light,dark}.jpg
+# assets/screenshots/pixculler-{iphone,backups,search,review,compare,android}-{lang}-{light,dark}.jpg
 SHOTS = {
 "en": dict(
     h2="A look at the app",
     grid_alt="PixCuller showing the photos of an iPhone connected by USB, with badges on the similar ones",
     items=[
+        ("backups", "Photos already saved on your computer get a green frame: add your backup folders and PixCuller finds the identical copies."),
+        ("search", "Search by place, country or date, offline: the place comes from the photos' GPS."),
         ("review", "Review a group of similar photos side by side: keep the best, mark the rest."),
         ("compare", "Compare up to 6 photos at once in full screen."),
         ("android", "Connect an Android phone with its USB cable: nothing to install on the phone."),
@@ -639,6 +656,8 @@ SHOTS = {
     h2="Un aperçu de l'app",
     grid_alt="PixCuller affichant les photos d'un iPhone branché en USB, avec des pastilles sur les photos similaires",
     items=[
+        ("backups", "Les photos déjà sauvegardées sur votre ordinateur sont encadrées de vert : ajoutez vos dossiers de sauvegarde, PixCuller retrouve les copies identiques."),
+        ("search", "Cherchez par lieu, pays ou date, hors ligne : le lieu vient du GPS des photos."),
         ("review", "Passez en revue un groupe de photos similaires côte à côte : gardez la meilleure, marquez les autres."),
         ("compare", "Comparez jusqu'à 6 photos à la fois en plein écran."),
         ("android", "Branchez un téléphone Android avec son câble USB : rien à installer sur le téléphone."),
@@ -648,6 +667,8 @@ SHOTS = {
     h2="Uno sguardo all'app",
     grid_alt="PixCuller con le foto di un iPhone collegato via USB e i badge sulle foto simili",
     items=[
+        ("backups", "Le foto già salvate sul computer hanno una cornice verde: aggiungi le tue cartelle di backup e PixCuller trova le copie identiche."),
+        ("search", "Cerca per luogo, paese o data, offline: il luogo viene dal GPS delle foto."),
         ("review", "Rivedi un gruppo di foto simili affiancate: tieni la migliore, segna le altre."),
         ("compare", "Confronta fino a 6 foto alla volta a schermo intero."),
         ("android", "Collega un telefono Android con il suo cavo USB: niente da installare sul telefono."),
@@ -657,6 +678,8 @@ SHOTS = {
     h2="Ein Blick in die App",
     grid_alt="PixCuller zeigt die Fotos eines per USB verbundenen iPhones mit Markierungen an ähnlichen Fotos",
     items=[
+        ("backups", "Auf dem Computer schon gesicherte Fotos bekommen einen grünen Rahmen: Sicherungsordner hinzufügen, PixCuller findet die identischen Kopien."),
+        ("search", "Suche nach Ort, Land oder Datum, offline: Der Ort stammt aus dem GPS der Fotos."),
         ("review", "Eine Gruppe ähnlicher Fotos nebeneinander prüfen: das beste behalten, den Rest markieren."),
         ("compare", "Bis zu 6 Fotos gleichzeitig im Vollbild vergleichen."),
         ("android", "Ein Android-Telefon mit seinem USB-Kabel anschließen: auf dem Telefon muss nichts installiert werden."),
@@ -666,6 +689,8 @@ SHOTS = {
     h2="Un vistazo a la app",
     grid_alt="PixCuller mostrando las fotos de un iPhone conectado por USB, con insignias en las fotos similares",
     items=[
+        ("backups", "Las fotos ya guardadas en tu ordenador se enmarcan en verde: añade tus carpetas de copia y PixCuller encuentra las copias idénticas."),
+        ("search", "Busca por lugar, país o fecha, sin conexión: el lugar viene del GPS de las fotos."),
         ("review", "Revisa un grupo de fotos similares una al lado de otra: conserva la mejor, marca el resto."),
         ("compare", "Compara hasta 6 fotos a la vez a pantalla completa."),
         ("android", "Conecta un teléfono Android con su cable USB: no hay que instalar nada en el teléfono."),

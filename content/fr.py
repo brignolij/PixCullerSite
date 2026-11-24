@@ -22,6 +22,10 @@ FAQ_PIXCULLER = dict(
     h1="Questions et réponses",
     intro="Comment trier vos photos plus vite depuis un ordinateur, vider votre iPhone ou votre téléphone Android depuis un Mac ou un PC, et ce que PixCuller fait (et ne fait jamais) avec vos photos.",
     qa=[
+        ("Comment PixCuller sait-il qu'une photo est déjà sauvegardée sur mon ordinateur ?",
+         "Ajoutez les dossiers où vous rangez vos photos (un disque, une clé USB) dans « Dossiers de sauvegarde ». PixCuller cherche alors une copie identique de chaque photo dans ces dossiers : même contenu, pas seulement même nom. Les photos retrouvées sont encadrées de vert dans la grille, et le menu propose deux filtres, « Sauvées » et « Pas sauvées ». Les dossiers sont mémorisés, et la vérification est rapide dès la deuxième fois. Choisissez les dossiers où vous triez vraiment vos photos plutôt qu'un disque entier : c'est bien plus rapide. Une Live Photo compte comme sauvée si sa vidéo y est aussi (une option permet de ne pas la vérifier). Rien ne quitte votre ordinateur."),
+        ("Puis-je chercher mes photos par lieu ou par date ?",
+         "Oui. Tapez un lieu, un pays, une date ou un nom de fichier dans la barre de recherche : « Milan », « Italie », « août 2026 », « 11.02.2025 ». Le lieu vient du GPS des photos et se trouve hors ligne, donc rien n'est envoyé nulle part. Un bouton calendrier filtre par période, et la grille peut montrer une section par jour ou rester dense."),
         ('Comment trier les photos de mon iPhone sur ordinateur, Mac ou PC ?',
          "Branchez l'iPhone à l'ordinateur avec un câble USB, déverrouillez-le et touchez « Se fier », puis ouvrez <a href=\"{pc}\">PixCuller</a> : il regroupe votre pellicule par voyage, compare les photos similaires côte à côte et marque des centaines de photos en quelques clics. Guides pas à pas : <a href=\"{post:sort-iphone-photos-on-mac}\">sur Mac</a> et <a href=\"{post:sort-iphone-photos-on-pc}\">sur PC Windows</a>."),
         ("Pourquoi trier ses photos sur ordinateur plutôt que sur l'iPhone ?",

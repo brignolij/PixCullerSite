@@ -22,6 +22,10 @@ FAQ_PIXCULLER = dict(
     h1="Preguntas y respuestas",
     intro="Cómo ordenar tus fotos más rápido desde un ordenador, liberar espacio en tu iPhone o móvil Android desde un Mac o PC, y qué hace (y qué nunca hace) PixCuller con tus fotos.",
     qa=[
+        ("¿Cómo sabe PixCuller que una foto ya está guardada en mi ordenador?",
+         "Añade las carpetas donde guardas tus fotos (un disco, una memoria USB) en «Carpetas de copia». PixCuller busca entonces una copia idéntica de cada foto en ellas: mismo contenido, no solo mismo nombre. Las fotos encontradas se enmarcan en verde en la cuadrícula y el menú ofrece dos filtros, «Guardadas» y «No guardadas». Las carpetas se recuerdan y la comprobación es rápida desde la segunda vez. Elige las carpetas donde de verdad ordenas tus fotos en lugar de un disco entero: es mucho más rápido. Una Live Photo cuenta como guardada si su vídeo también está (una opción permite no comprobarlo). Nada sale de tu ordenador."),
+        ("¿Puedo buscar mis fotos por lugar o por fecha?",
+         "Sí. Escribe un lugar, un país, una fecha o un nombre de archivo en la barra de búsqueda: «Milán», «Italia», «agosto 2026», «11.02.2025». El lugar viene del GPS de las fotos y se averigua sin conexión, así que no se envía nada. Un botón de calendario filtra por periodo y la cuadrícula puede mostrar una sección por día o quedarse densa."),
         ('¿Cómo ordeno las fotos del iPhone en el ordenador, Mac o PC?',
          "Conecta el iPhone al ordenador con un cable USB, desbloquéalo y toca Confiar, y abre <a href=\"{pc}\">PixCuller</a>: agrupa el carrete por viaje, compara las fotos parecidas lado a lado y marca cientos de fotos en pocos clics. Guías paso a paso: <a href=\"{post:sort-iphone-photos-on-mac}\">en el Mac</a> y <a href=\"{post:sort-iphone-photos-on-pc}\">en un PC con Windows</a>."),
         ("¿Por qué ordenar las fotos en el ordenador en lugar de en el iPhone?",

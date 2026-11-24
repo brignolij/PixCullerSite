@@ -22,6 +22,10 @@ FAQ_PIXCULLER = dict(
     h1="Questions and answers",
     intro="How to sort your photos faster from a computer, clear your iPhone or Android phone from a Mac or PC, and what PixCuller does (and never does) with your photos.",
     qa=[
+        ("How does PixCuller know a photo is already saved on my computer?",
+         "Add the folders where you keep your photos (a disk, a USB drive) in “Backup folders”. PixCuller then looks for an identical copy of each photo in them: same content, not just the same name. Photos it finds get a green frame in the grid, and the menu has two filters, “Saved” and “Not saved”. Folders are remembered, and checking is fast from the second time on. Pick the folders where you really sort your photos rather than a whole disk: it is much quicker. A Live Photo counts as saved when its video is there too (an option lets you skip that check). Nothing leaves your computer."),
+        ("Can I search my photos by place or date?",
+         "Yes. Type a place, a country, a date or a file name in the search box: “Milan”, “Italy”, “August 2026”, “11.02.2025”. The place comes from the photos' GPS and is looked up offline, so nothing is sent anywhere. A calendar button filters by period, and the grid can show one section per day or stay dense."),
         ('How do I sort my iPhone photos on a computer, Mac or PC?',
          "Plug the iPhone into the computer with a USB cable, unlock it and tap Trust, then open <a href=\"{pc}\">PixCuller</a>: it groups your camera roll by trip, compares similar shots side by side and marks hundreds of photos in a few clicks. Step-by-step guides: <a href=\"{post:sort-iphone-photos-on-mac}\">on a Mac</a> and <a href=\"{post:sort-iphone-photos-on-pc}\">on a Windows PC</a>."),
         ("Why sort photos on a computer instead of on the iPhone?",

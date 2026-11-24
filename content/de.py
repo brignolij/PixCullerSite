@@ -22,6 +22,10 @@ FAQ_PIXCULLER = dict(
     h1="Fragen und Antworten",
     intro="Wie du deine Fotos am Computer schneller sortierst, dein iPhone oder Android-Telefon von einem Mac oder PC aus aufräumst und was PixCuller mit deinen Fotos macht (und nie macht).",
     qa=[
+        ("Woher weiß PixCuller, dass ein Foto schon auf meinem Computer gesichert ist?",
+         "Fügen Sie die Ordner, in denen Sie Ihre Fotos ablegen (eine Festplatte, einen USB-Stick), unter „Sicherungsordner“ hinzu. PixCuller sucht dann in ihnen eine identische Kopie jedes Fotos: gleicher Inhalt, nicht nur gleicher Name. Gefundene Fotos bekommen im Raster einen grünen Rahmen, und das Menü bietet zwei Filter, „Gesichert“ und „Nicht gesichert“. Die Ordner werden gemerkt, und die Prüfung ist ab dem zweiten Mal schnell. Wählen Sie die Ordner, in denen Sie Ihre Fotos wirklich sortieren, statt einer ganzen Festplatte: Das geht viel schneller. Ein Live Photo gilt als gesichert, wenn auch sein Video da ist (eine Option überspringt diese Prüfung). Nichts verlässt Ihren Computer."),
+        ("Kann ich meine Fotos nach Ort oder Datum suchen?",
+         "Ja. Geben Sie einen Ort, ein Land, ein Datum oder einen Dateinamen in das Suchfeld ein: „Mailand“, „Italien“, „August 2026“, „11.02.2025“. Der Ort stammt aus dem GPS der Fotos und wird offline bestimmt, es wird also nichts gesendet. Ein Kalender-Button filtert nach Zeitraum, und das Raster kann einen Abschnitt pro Tag zeigen oder dicht bleiben."),
         ('Wie sortiere ich meine iPhone-Fotos am Computer, Mac oder PC?',
          "Verbinde das iPhone per USB-Kabel mit dem Computer, entsperre es und tippe auf „Vertrauen“, dann öffne <a href=\"{pc}\">PixCuller</a>: Es gruppiert deine Fotorolle nach Reise, vergleicht ähnliche Aufnahmen nebeneinander und markiert Hunderte Fotos mit wenigen Klicks. Schritt-für-Schritt-Anleitungen: <a href=\"{post:sort-iphone-photos-on-mac}\">am Mac</a> und <a href=\"{post:sort-iphone-photos-on-pc}\">am Windows-PC</a>."),
         ("Warum Fotos am Computer statt auf dem iPhone sortieren?",
